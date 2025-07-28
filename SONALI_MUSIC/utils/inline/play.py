@@ -73,6 +73,9 @@ def stream_markup_timer(_, chat_id, played, dur):
                 InlineKeyboardButton(text="sᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"),
             ],
             [
+                InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/{app.username}?startgroup=true",)
+            ],    
+            [
                 InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close"),
             ],
         ]
@@ -92,6 +95,9 @@ def stream_markup(_, chat_id):
         [
             InlineKeyboardButton(text="ʀᴇᴘʟᴀʏ", callback_data=f"ADMIN Replay|{chat_id}"),
             InlineKeyboardButton(text="sᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"),
+        ],
+        [
+            InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/{app.username}?startgroup=true",)
         ],
         [
             InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close"),
